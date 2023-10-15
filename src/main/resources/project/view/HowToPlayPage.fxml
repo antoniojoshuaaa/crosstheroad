@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="anchorPane" prefHeight="780.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.view.HowToPlayController">
+   <children>
+      <ImageView fitHeight="114.0" fitWidth="110.0" layoutX="399.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/arrow_up.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="31.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the arrow Up button to move the chicken!">
+         <font>
+            <Font name="Ink Free" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You may not go back once you have moved up">
+         <font>
+            <Font name="Ink Free" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="175.0" fitWidth="187.0" layoutX="89.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/car_crash.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="300.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you get hit by a car, you die.">
+         <font>
+            <Font name="Ink Free" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="210.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Rules">
+         <font>
+            <Font name="Ink Free" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="185.0" layoutY="683.0" mnemonicParsing="false" onAction="#handleHomeButton" text="Back to Home Page">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

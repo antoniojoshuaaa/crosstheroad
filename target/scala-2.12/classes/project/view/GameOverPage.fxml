@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="780.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.view.GameOverController">
+   <children>
+      <StackPane fx:id="gameOverPane" alignment="TOP_CENTER" prefHeight="780.0" prefWidth="600.0">
+         <children>
+            <TilePane alignment="CENTER" hgap="20.0" prefHeight="200.0" prefWidth="200.0" StackPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleRestartGame" text="Restart">
+                     <font>
+                        <Font name="Ink Free" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleHomeButton" text="Home">
+                     <font>
+                        <Font name="Ink Free" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="40.0" />
+               </StackPane.margin>
+            </TilePane>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You died.">
+               <StackPane.margin>
+                  <Insets top="250.0" />
+               </StackPane.margin>
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
